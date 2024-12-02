@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/icons/meal-dash-logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>MealDash</title>
+  </head>
+  <body>
+    <div>
+      <div class="fixed nav-menu bg-[#B41E32] w-full h-screen py-[24px]" id="nav-menu">
+        <div class="relative flex flex-col gap-[32px] items-center justify-center container w-full h-full">
+          <div class="absolute top-0 right-0" id="close-menu-button">
+            <button><img src="./public/icons/close-menu-icon.svg" alt=""></button>
+          </div>
+          <ul class="flex flex-col gap-[24px] text-center text-white">
+            <li><a href="">Menu</a></li>
+            <li><a href="">Order Now</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+          </ul>
+          <div class="flex flex-col stext-[#B41E32] font-bold gap-[8px]">
+            <button class="px-[32px] py-[12px] text-white"><a href=""></a>Sign Up</button>
+            <button class="px-[32px] py-[12px] bg-[#FFE066] rounded-[24px]"><a href=""></a>Login</button>
+          </div>
+        </div>
+      </div>
+      
+      <header class="container">
+        <nav class="flex justify-between py-[16px] xl:py-[24px]">
+          <a href=""><img src="./public/icons/meal-dash-logo.svg" alt="" class="w-[150px]"></a>
+          <button class="block xl:hidden" id="nav-menu-button"><img src="./public/icons/nav-menu-icon.svg" alt=""></button>
+          <div class="hidden xl:flex items-center gap-[32px]">
+            <ul class="flex gap-[24px] nav-items-container">
+              <li><a href="">Menu</a></li>
+              <li><a href="">Order Now</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services</a></li>
+            </ul>
+            <div class="text-[#B41E32] font-bold">
+              <button class="px-[32px] py-[12px]"><a href=""></a>Sign Up</button>
+              <button class="px-[32px] py-[12px] bg-[#FFE066] rounded-[24px]"><a href=""></a>Login</button>
+            </div>
+          </div>
+        </nav>
+        <div class="py-[64px] xl:py-[100px] flex flex-col xl:flex-row xl:items-center gap-[64px]">
+          <div class="max-w-fit">
+            <h1 class="font-bold text-[40px] xl:text-[48px] text-center xl:text-left pb-[16px] leading-snug">Craving Something? <span class="font-bold text-[#B41E32] leading-snug xl:block">We've Got You Covered</span></h1>
+            <p class="text-center text-[16px] xl:text-[18px] xl:text-left">Fresh meals from your favorite restaurants delivered in under 30 minutes. Satisfaction guaranteed!</p>
+            <div class="flex justify-center xl:justify-start gap-[8px] text-[#B41E32] font-bold text-[18px] xl:text-[20px] pt-[24px]">
+              <button class="px-[32px] py-[12px] bg-[#FFE066] rounded-[24px]">Order Now</button>
+              <button class="px-[32px] py-[12px]">View Menu</button>
+            </div>
+          </div>
+          <div class="">
+            <img src="./public/images/hero-section-cover-img.svg" alt="" class="w-[950px]">
+          </div>
+        </div>
+      </header>
+      
+      <main>
+        <div class="py-[64px] xl:py-[100px] flex flex-col gap-[48px] container">
+          <div class="flex justify-between"> 
+            <div class="border-b-2 border-[#B41E32] py-[8px]  w-full xl:w-fit">
+              <p class="text-[#B41E32] font-bold pb-[8px]">FEATURED MENU ITEMS</p>
+              <h2 class="font-bold text-[40px] leading-tight">Today's Favorites, Just for You</h2>
+            </div>
+            <div class="hidden xl:flex gap-[8px] place-items-end">
+              <img src="./public/icons/arrow-left.svg" alt="" class="w-[48px]">
+              <img src="./public/icons/arrow-right.svg" alt="" class="w-[48px]">
+            </div>
+          </div>
+          <div class="flex flex-col xl:flex-row gap-[24px] xl:gap-[48px]">
+            <div class="flex flex-row xl:flex-col overflow-x-auto whitespace-nowrap gap-[16px] py-[16px] w-fullxl:w-[250px]">
+              <div class="flex items-center gap-[16px] min-w-fit bg-[#B41E32] py-[8px] px-[16px] rounded-[24px] text-[#FFE066]">
+                <img src="./public/icons/all-icon.svg" alt="" class="rounded-full">All
+              </div>
+              <div class="flex items-center gap-[16px] min-w-fit py-[8px] px-[16px] rounded-[24px] text-[#232323]">
+                <img src="./public/icons/meals-icon.svg" alt="" class="rounded-full">Meals
+              </div>
+              <div class="flex items-center gap-[16px] min-w-fit py-[8px] px-[16px] rounded-[24px] text-[#232323]">
+                <img src="./public/icons/beverages-icon.svg" alt="" class="rounded-full">Beverages
+              </div>
+              <div class="flex items-center gap-[16px] min-w-fit py-[8px] px-[16px] rounded-[24px] text-[#232323]">
+                <img src="./public/icons/snack-icon.svg" alt="" class="rounded-full">Snacks
+              </div>
+              <div class="flex items-center gap-[16px] min-w-fit py-[8px] px-[16px] rounded-[24px] text-[#232323]">
+                <img src="./public/icons/dessert-icon.svg" class="rounded-full">Dessert
+              </div>
+            </div>
+            <div class="flex justify-normal xl:justify-between p-0 xl:p-[32px] overflow-x-auto w-full gap-[24px] xl:gap-0">
+              <div class="flex flex-col gap-[24px] min-w-[180px] xl:w-[255px]">
+                <img class="" src="./public/images/cheesy-pepperoni-pizza.svg" alt="">
+                <div class="flex flex-col gap-[16px]">
+                  <h5 class="font-bold text-[#B41E32] text-[14px]">Cheesy Pepporoni Pizza</h5>
+                  <p class="text-[13px]">A classic loaded with melted mozzarella and spicy pepperoni.</p>
+                  <p class="text-[#B41E32]">$12.99</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-[24px] min-w-[180px] xl:w-[255px]">
+                <img class="" src="./public/images/fresh-garden-salad.svg" alt="">
+                <div class="flex flex-col gap-[16px]">
+                  <h5 class="font-bold text-[#B41E32] text-[14px]">Fresh Garden Salad</h5>
+                  <p class="text-[13px]">Crisp greens, cherry tomatoes, and a tangy vinaigrette.</p>
+                  <p class="text-[#B41E32]">$8.49</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-[24px] min-w-[180px] xl:w-[255px]">
+                <img class="min-w-[180px] xl:w-[255px]" src="./public/images/spicy-chicken-wings.svg" alt="">
+                <div class="flex flex-col gap-[16px]">
+                  <h5 class="font-bold text-[#B41E32] text-[14px]">Spicy Chicken Wings</h5>
+                  <p class="text-[13px]">Juicy wings with a fiery kick, served with a variety of dip you can try.</p>
+                  <p class="text-[#B41E32]">$10.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+              <button class="px-[32px] py-[12px] bg-[#B41E32] text-[#FFE066] font-bold rounded-[24px]">View Full Menu</button>
+          </div>
+        </div>
+        <div class="py-[64px] xl:py-[100px] flex flex-col gap-[48px] container">
+          <div class="border-b-2 border-[#B41E32] text-center p-[8px] w-full xl:w-fit m-auto">
+            <div>            
+              <p class="text-[#B41E32] font-bold pb-[8px]">HOW IT WORKS </p>
+              <h2 class="font-bold text-[40px] leading-tight">Ordering Your Favorite Meal is Simple!</h2></div>
+          </div>
+          <div class="flex flex-col xl:flex-row gap-[64px] justify-normal xl:justify-between items-center xl:items-baseline">
+            <div class="flex flex-col items-center gap-[16px] w-[300px]">
+              <img src="./public/images/step-one-cover-img.svg" alt="">
+              <div class="text-center">
+                <h6 class="text-[#B41E32] font-bold text-[20px]">Place Your Order</h6>
+                <p class="text-[18px]">Browse our menu, select your favorites, and order in minutes.</p>
+              </div>
+              <div class="border bg-[#B41E32] rounded-full text-[#F5F5F5] w-[64px] h-[64px] text-[40px] font-bold flex items-center justify-center">1</div>
+            </div>
+            <div class="flex flex-col items-center gap-[16px] w-[300px]">
+              <img src="./public/images/step-two-cover-img.svg" alt="">
+              <div class="text-center">
+                <h6 class="text-[#B41E32] font-bold text-[20px]">Deliver to Your Door</h6>
+                <p class="text-[18px]">Sit back and relax while our delivery team ensures your food arrives fresh and on time.</p>
+              </div>
+              <div class="border bg-[#B41E32] rounded-full text-[#F5F5F5] w-[64px] h-[64px] text-[40px] font-bold flex items-center justify-center">2</div>
+            </div>
+            <div class="flex flex-col items-center gap-[16px] w-[300px]">
+              <img src="./public/images/step-three-cover-img.svg" alt="">
+              <div class="text-center">
+                <h6 class="text-[#B41E32] font-bold text-[20px]">Enjoy Your Meal</h6>
+                <p class="text-[18px]">Unwrap your meal, savor the flavors, and satisfy your cravings.</p>
+              </div>
+              <div class="border bg-[#B41E32] rounded-full text-[#F5F5F5] w-[64px] h-[64px] text-[40px] font-bold flex items-center justify-center">3</div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="px-[32px] py-[12px] bg-[#B41E32] text-[#FFE066] font-bold rounded-[24px]">View Full Menu</button>
+          </div>
+        </div>
+
+        <div class="bg-[#B41E32] w-full py-[64px] px-[20px] xl:p-[100px]">
+          <div class="bg-[#FFE066] rounded-[24px] p-[16px] xl:p-[64px] flex flex-col xl:flex-row gap-[48px] justify-normal xl:justify-between container">
+           <div class="flex flex-col gap-[48px] w-fit xl:w-[572px]">
+            <div>
+              <div class="pb-[24px]">
+                <p class="text-[#B41E32] font-bold">APP</p>
+                <h2 class="font-bold text-[48px] xl:text-[50px] leading-tight">Order Anytime, Anywhere!</h2>
+              </div>
+              <p class="text-[18px] xl:text-[20px]">Get exclusive deals and track your delivery in real-time.</p>
+            </div>
+            <div>
+              <ul class="flex flex-col gap-[24px]">
+                <li class="flex items-center gap-[12px]">
+                  <img src="./public/icons/easy-ordering-icon.svg" alt="">
+                  <p><span class="font-bold">Easy Ordering:</span>&nbsp;Browse menus, customize your meals, and place orders with a few taps.</p>
+                </li>
+                <li class="flex items-center gap-[12px]">
+                  <img src="./public/icons/real-time-tracking-icon.svg" alt="">
+                  <p><span class="font-bold">Real-Time Tracking:</span>&nbsp;Watch your delivery in progress with live updates.</p>
+                </li>
+                <li class="flex items-center gap-[12px]">
+                  <img src="./public/icons/discounts-icon.svg" alt="">
+                  <p><span class="font-bold">Exclusive Discounts:</span>&nbsp;Access app-only deals and rewards.</p>
+                </li>
+                <li class="flex items-center gap-[12px]">
+                  <img src="./public/icons/support-icon.svg" alt="">
+                  <p><span class="font-bold">24/7 Support:</span>&nbsp;Get help whenever you need it with our in-app chat.</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-[24px] text-[#B41E32] pb-[14px]">DOWNLOAD NOW:</p>
+              <div class="flex flex-col xl:flex-row gap-[28px]">
+                <button><img src="./public/images/google-play.svg" alt=""></button>
+                <button><img src="./public/images/app-store.svg" alt=""></button>
+              </div>
+            </div>
+           </div>
+           <div class="self-center">
+            <img src="./public/images/app-preview-img.svg" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="py-[64px] xl:py-[100px] flex flex-col gap-[64px] container"> 
+          <div class="border-b-2 border-[#B41E32] text-center p-[8px] w-fit m-auto">
+            <p class="text-[#B41E32] font-bold">BENEFITS</p>
+            <h2 class="font-bold text-[40px] leading-tight">Why Choose Us</h2>
+          </div>
+          <div class="flex flex-col xl:flex-row gap-[64px] xl:gap-0 items-end justify-normal xl:justify-between">
+            <div class="flex flex-col gap-[32px] w-full xl:w-[360px]">
+              <img src="./public/images/lightning-fast-delivery-cover-img.svg" alt="">
+              <div class="text-center">
+                <h5 class="font-bold text-[20px] text-[#B41E32]">Lightning-Fast Delivery</h5>
+                <p class="text-[18px]">Meals are delivered in only just under 30 minutes.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[32px] w-full xl:w-[360px]">
+              <img src="./public/images/endless-choice-cover-img.svg" alt="">
+              <div class="text-center">
+                <h5 class="font-bold text-[20px] text-[#B41E32]">Endless Choice in the Menu</h5>
+                <p class="text-[18px]">A wide variety of cuisines to satisfy every craving.</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-[32px] w-full xl:w-[360px]">
+              <img src="./public/images/secure-payment-cover-img.svg" alt="">
+              <div class="text-center">
+                <h5 class="font-bold text-[20px] text-[#B41E32]">Safe &amp; Secure Payments</h5>
+                <p class="text-[18px]">Multiple payment methods to choose from.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" py-[64px] xl:py-[100px] flex flex-col gap-[64px] container"> 
+          <div class="border-b-2 border-[#B41E32] gap-[8px] py-[8px] w-fit">
+            <p class="text-[#B41E32] font-bold pb-[8px]">CUSTOMER TESTIMONIALS</p>
+            <h2 class="font-bold text-[40px] leading-tight">What Our Customers Are Saying</h2>
+          </div>
+          <div class="flex flex-col xl:flex-row gap-[32px] xl:gap-0 justify-normal xl:justify-between">
+            <div class="bg-[#B41E32] rounded-[24px] p-[24px] flex flex-col gap-[28px]">
+              <img src="./public/icons/stars.svg" alt="" class="w-[100px]">
+              <p class="text-[#F5F5F5] font-bold">"The food delivery was quick and delicious!"</p>
+              <div>
+                <img src="./public/icons/customer-icon.svg" alt="" class="pb-[14px]">
+                <div class="text-[#F5F5F5]">
+                  <p class="font-bold">John Doe</p>
+                  <p>Marketing Manager, ABC Corp</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#FFE066] rounded-[24px] p-[24px] flex flex-col gap-[28px] text-[#232323]">
+              <img src="./public/icons/stars.svg" alt="" class="w-[100px] text-[#B]">
+              <p class=" font-bold">"The food delivery was quick and delicious!"</p>
+              <div>
+                <img src="./public/icons/customer-icon.svg" alt="" class="pb-[14px]">
+                <div>
+                  <p class="font-bold">John Doe</p>
+                  <p>Marketing Manager, ABC Corp</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#B41E32] rounded-[24px] p-[24px] flex flex-col gap-[28px]">
+              <img src="./public/icons/stars.svg" alt="" class="w-[100px]">
+              <p class="text-[#F5F5F5] font-bold">"The food delivery was quick and delicious!"</p>
+              <div>
+                <img src="./public/icons/customer-icon.svg" alt="" class="pb-[14px]">
+                <div class="text-[#F5F5F5]">
+                  <p class="font-bold">John Doe</p>
+                  <p>Marketing Manager, ABC Corp</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[url('../public/images/cta-bg.svg')] px-[20px] py-[64px] xl:py-[100px]">
+          <div class="container flex flex-col gap-[24px]">
+            <div class="text-center text-[#f5f5f5]">
+              <h2 class="text-[40px] font-bold mb-[24px]">Delicious Meals Are Just a Click Away!</h2>
+              <p>Whether it’s a quick lunch or a cozy dinner, we’ve got you covered. Place your order now <br class="hidden xl:block">and enjoy fresh, tasty food delivered right to your door.</p>
+            </div>
+            <div class="text-center">
+              <button class="text-[#B41E32] w-full xl:w-fit font-bold px-[32px] py-[12px] bg-[#FFE066] rounded-[24px] text-[18px] xl:text-[20px]">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="py-[64px] xl:py-[100px] container flex flex-col gap-[64px]">
+          <div class="flex flex-col xl:flex-row gap-[32px] justify-normal xl:justify-between ">
+            <div class="flex flex-col gap-[32px]">
+              <a href=""><img src="./public/icons/meal-dash-logo.svg" class="w-[200px]" alt=""></a>
+              <div>
+                <p class="font-bold text-[24px] text-[#B41E32] pb-[14px]">DOWNLOAD NOW:</p>
+                <div class="flex flex-col xl:flex-row gap-[28px]">
+                  <button><img src="./public/images/google-play.svg" alt=""></button>
+                  <button><img src="./public/images/app-store.svg" alt=""></button>
+                </div>
+            </div>
+            </div>
+            <div class="flex flex-col xl:flex-row gap-[24px] xl:gap-[48px]">
+              <div>
+                <h5 class="font-bold text-[18px] pb-[16px]">Links</h5>
+                <ul class="flex flex-col gap-[16px] xl:gap-[18px] text-[18px]">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Menu</a></li>
+                  <li><a href="">Order Now</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Services</a></li>
+                </ul>
+              </div>
+              <div class="flex flex-col gap-[24px]">
+                <div>
+                  <h5 class="font-bold text-[18px] pb-[16px]">Socials</h5>
+                  <ul class="flex gap-[16px]">
+                    <li><a href=""><img src="./public/icons/ig-icon.svg" alt=""></a></li>
+                    <li><a href=""><img src="./public/icons/fb-icon.svg" alt=""></a></li>
+                    <li><a href=""><img src="./public/icons/linked-in-icon.svg" alt=""></a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 class="font-bold text-[18px] pb-[16px]">Email</h5>
+                  <a href="">sampleemail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col xl:flex-row gap-[64px] justify-normal xl:justify-between">
+            <ul class="flex flex-col xl:flex-row order-1 xl:order-2 gap-[24px]">
+              <li class="text-[14px]"><a href="">Privacy Policy</a></li>
+              <li class="text-[14px]"><a href="">Terms of Service</a></li>
+              <li class="text-[14px]"><a href="">Cookies Settings</a></li>
+            </ul>
+            <p class="text-[14px]">© 2024 MealDash. All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
