@@ -69,3 +69,15 @@
 .nav-items-container li:hover {
   transform: scale(1.2);
 }
+
+.todays-food-items-container {
+  scroll-behavior: smooth;
+}
+
+/* .arrow-left {
+ pointer-events: ;
+}
+
+.arrow-right {
+
+} */
