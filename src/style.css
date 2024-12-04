@@ -81,3 +81,15 @@
 .arrow-right {
 
 } */
+
+
+.active {
+ background-color: #B41E32;
+ color: #FFE066;
+}
+
+
+.btn:hover {
+  background-color: #B41E32;
+  color: #FFE066;
+}
